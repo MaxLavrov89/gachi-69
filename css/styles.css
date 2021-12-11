@@ -72,22 +72,15 @@ button {
   border: none;
   cursor: pointer;
 }
-/*hero-mint */
 
-.hero {
-  
-  max-width: 100%;
-  max-height: 1080px;
- 
-}
 .mint-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
   width: 154px;
   height: 104px;
   border-radius: 80px;
+  text-align: center;
   padding: 0px;
   font-size: 36px;
   font-weight: bold;
@@ -100,10 +93,12 @@ button {
 
 
 .container {
-width: 100%;
-height: 100vh;
-overflow-y: scroll;
-overscroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
   
 
@@ -112,26 +107,78 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-text-align: center;
 width: 100%;
 height: 100vh;
-}
- 
-/* Section Images */
 
+/* Scroll Snap */
+scroll-snap-align: start end;
+}
+
+.history-text {
+  max-width: 400px;
+  text-align: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    padding-top: 30px;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+.faq-question {
+  max-width: 500px;
+  height: 40px;
+  border-color: white;
+  text-align: left;
+  display:table;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.faq-answer {
+  margin-bottom: 30px;
+}
+
+.faq-sum {
+  width: 450px;
+}
+.faq-image {
+  float: right;
+}
+
+details summary::marker { 
+  display:none; 
+} 
+
+summary { 
+  list-style: none 
+}
+
+/* Section Images */
 section#home {
  background: url(../images/gachimain.jpg) no-repeat center center/cover; 
 }
 section#history {
-
 background: #020411;
 border: 1px solid #000000;
 }
 section#roadmap {
  background: url(../images/roadmapbg.png) no-repeat center center/cover; 
- 
+ height: 2800px;
 }
-section#fag
+section#faq
 {
   background: url(../images/fag_bg.png) no-repeat center center/cover;
 }
