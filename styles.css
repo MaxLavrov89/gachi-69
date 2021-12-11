@@ -175,11 +175,7 @@ background: #020411;
 border: 1px solid #000000;
 }
 section#roadmap {
-<<<<<<< HEAD:styles.css
  background: url(./images/roadmapbg.png) no-repeat center center/cover; 
-=======
- background: url(../images/roadmapbg.png) no-repeat center center/cover; 
->>>>>>> a7b75bced557e2f5e7998eac48888b9c64f56ea6:css/styles.css
  height: 2800px;
 }
 section#faq
