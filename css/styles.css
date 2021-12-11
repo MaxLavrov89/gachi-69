@@ -100,9 +100,10 @@ button {
 
 
 .container {
-  width: 100%;
-  height: 100vh;
-
+width: 100%;
+height: 100vh;
+overflow-y: scroll;
+overscroll-behavior: smooth;
 }
   
 
@@ -119,7 +120,7 @@ height: 100vh;
 /* Section Images */
 
 section#home {
- background: url(/images/gachimain.jpg) no-repeat center center/cover; 
+ background: url(../images/gachimain.jpg) no-repeat center center/cover; 
 }
 section#history {
 
@@ -127,10 +128,10 @@ background: #020411;
 border: 1px solid #000000;
 }
 section#roadmap {
- background: url(/images/roadmapbg.png) no-repeat center center/cover; 
+ background: url(../images/roadmapbg.png) no-repeat center center/cover; 
  
 }
 section#fag
 {
-  background: url(/images/fag_bg.png) no-repeat center center/cover;
+  background: url(../images/fag_bg.png) no-repeat center center/cover;
 }
