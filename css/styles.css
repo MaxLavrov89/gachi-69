@@ -4,12 +4,13 @@
   --act-color: #d67bf5;
 }
 body {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: #ffffff;
-  background: #333;
+  
   line-height: 1.6;
   height: 100vh;
+  
 }
 
 h1,
@@ -32,21 +33,16 @@ button {
   border: none;
   cursor: pointer;
 }
-/* header */
+/* Navigation */
 
-.header {
-  max-width: 1920px;
-  max-height: 104px;
-
-  display: flex;
-}
 .navbar {
   position: fixed;
   top: 0;
   z-index: 1;
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 104px;
+  height: 54px;
   background-image: linear-gradient(#6c0b22 0%, #07011d 100%);
 }
 .navbar ul {
@@ -67,17 +63,28 @@ button {
 .navbar ul li a:hover {
   color: skyblue;
 }
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+/*hero-mint */
 
 .hero {
-  margin-top: auto;
+  
   max-width: 100%;
-  max-height: 100%;
+  max-height: 1080px;
+ 
 }
 .mint-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
+  margin-top: auto;
   width: 154px;
   height: 104px;
   border-radius: 80px;
@@ -89,8 +96,41 @@ button {
   color: var(--sec-color);
   background-color: var(--main-color);
 }
+/* CSS Smooth Scroll */
+
+
 .container {
   width: 100%;
-  height: 100%;
-  /* CSS Smooth Scroll */
+  height: 100vh;
+
+}
+  
+
+section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100%;
+height: 100vh;
+}
+ 
+/* Section Images */
+
+section#home {
+ background: url(/images/gachimain.jpg) no-repeat center center/cover; 
+}
+section#history {
+
+background: #020411;
+border: 1px solid #000000;
+}
+section#roadmap {
+ background: url(/images/roadmapbg.png) no-repeat center center/cover; 
+ 
+}
+section#fag
+{
+  background: url(/images/fag_bg.png) no-repeat center center/cover;
 }
